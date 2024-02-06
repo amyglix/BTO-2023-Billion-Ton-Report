@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+   	<!-- Font Awesome
+         ================================================== -->
+    <script src="https://kit.fontawesome.com/36ddb5b453.js" crossorigin="anonymous"></script>
+    
+    <!-- Site CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+    <link href="client/css/app.min.css" rel="stylesheet">
+    <link href="client/css/billion-ton-report.css" rel="stylesheet">
+      
+    <style>
+        .carousel-caption {text-shadow: none;}
+        .accordion-item {margin-bottom: 0.5em;}
+        .moreinfo {width:60px; height:60px;}
+        #today {height: 400px;}
+        .accordion-button {background-color: #35763B; color:#fff;}
+        .accordion-button::after {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath  d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+        .accordion-button:not(.collapsed)::after {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+        .accordion-button:not(.collapsed) {color: #fff; background-color:#444;}
+        .mh75 {min-height:75px;}
+        
+        .highcharts-figure,
+        .highcharts-data-table table {
+            min-width: 310px;
+            max-width: 600px;
+            margin: 1em auto;
+        }
+
+        .highcharts-data-table table {
+            border-collapse: collapse;
+            border: 1px solid #ebebeb;
+            margin: 10px auto;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .highcharts-data-table caption {
+            padding: 1em 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .highcharts-data-table th {
+            font-weight: 600;
+            padding: 0.5em;
+        }
+
+        .highcharts-data-table td,
+        .highcharts-data-table th,
+        .highcharts-data-table caption {
+            padding: 0.5em;
+        }
+
+        .highcharts-data-table thead tr,
+        .highcharts-data-table tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+
+        .highcharts-data-table tr:hover {
+            background: #f1f7ff;
+        }
+
+    </style>
+      
+    <title>2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</title>
+
+    <!-- Google Analytics
+         ================================================== -->
+    <script>
+     (function() {
+       var so = document.createElement('script'); so.type = 'text/javascript'; so.async = true;
+       so.src = '//www.energy.gov/includes/ga/eere.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(so, s);
+     })();
+    </script>
+    
+	</head>
+
+	<body>
+        
+    <a href="#maincontent" class="sr-only">Skip to main content</a> 
+    
+
+
+
+    <!-- BEGIN CONTENT -->
+    <div class="container-fluid px-0">  
+    <section>
+    <!-- video -->
+    <div class="position-relative">
+      <div class="cover-image-holder">
+         <video autoplay="autoplay" class="img-fluid" loop="loop" muted="muted" poster="https://video.stratus.nrel.gov/billion-ton-report-video- poster.jpg">
+          <source src="https://video.stratus.nrel.gov/billion-ton-report-header.mp4" type="video/mp4" />
+          Your browser does not support the video tag. 
+        </video>
+      </div>
+      <div class="cover-text py-4">
+        <div class="container">
+          <h1 class="text-center text-white"><span class="d-block mt-2">2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- anchor links -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#data">Key Findings and Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#studies">Case Studies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#downloads">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#past">Past Reports</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    </section>
+    </div>
+        
+    <div class="container mt-4">
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <p class="lead">The U.S. Department of Energy Bioenergy Technology Office's (BETO's) 2023 Billion-Ton Report (BT23) is an assessment of renewable carbon resources potentially available in the United States. BT23 explores these resources in terms of quantity, price, geographical density and distribution, and market maturity. Resource quantities in this report are limited by specified economic and environmental sustainability constraints. Good practices are needed to ensure biomass production has positive environmental outcomes.</p>
+                <p class="lead">BT23 supports <a href="https://www.energy.gov/eere/bioenergy/about-bioenergy-technologies-office">BETO's mission</a>, particularly the <a href="https://www.energy.gov/eere/bioenergy/articles/2023-multi-year-program-plan">2023 Multi-Year Program Plan</a>.</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="well callout-green text-white">
+                    <p>Key outcomes:</p>
+                    <p><span class="larger">1.1&ndash;1.5 billion tons</span> of annual biomass production potential in a mature market</p>
+                    <hr />
+                    <p>Tripling bioenergy production to cover <span class="larger">~15%</span> of future U.S. energy needs</p>
+                    <hr />
+                    <p>Equivalent to more than <span class="larger">60 billion gallons</span> of renewable-carbon liquid fuels</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="well d-flex justify-content-center align-items-center my-4">
+                    <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                    <p class="mb-0">Read the Executive Summary and Chapter 1. Background and Introduction for more details.</p>
+                </div>
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c21QZnQtGqo?si=QppoJiqnI8DS0sxz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="well mt-0 mb-4">
+                    <p class="caption mb-0">Caption and text version.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <section class="bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Key Findings and Data</h2>
+                        <p>The United States can produce from 1.1 to 1.5 billion tons of biomass annually in a future mature market&mdash;with potential to provide renewable liquid fuels for hard-to-electrify sectors while meeting demands for food security and environmental services.</p>
+                    </div>
+                </div>
+                
+                <div id="keyfindings" class="carousel slide mt-4" data-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+            
+                    <div class="carousel-item active text-center">
+                        <img class="" src="https://video.stratus.nrel.gov/bt23-county-map-all-scenarios.gif" alt="ALT TEXT NEEDED" />
+                        <p class="caption text-center mx-auto">BT23 includes county-level resources assessments.</p>
+                    </div>
+                    <div class="carousel-item  text-center">
+                        <img class="" src="https://video.stratus.nrel.gov/bt23-treemap-all-scenarios.gif" alt="ALT TEXT NEEDED" />
+                        <p class="caption text-center mx-auto">In its mature-market medium scenario, BT23 estimates that 1.25 billion dry tons of biomass could be available every year in the United States.</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img class="" src="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios.gif" alt="ALT TEXT NEEDED" />
+                        <p class="caption text-center mx-auto">Not all biomass resources cost the same or are worth the same, and supplies increase with price. Behind the simplified supply summaries is an array of resources available at different prices.</p>
+                    </div>
+        
+                </div>
+                <!-- navigation buttons -->
+                <div class="lead text-center slideshownav">
+                    <a class="carousel-control-prev" type="button" data-bs-target="#keyfindings" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a> | <a class="carousel-control-next" type="button" data-bs-target="#keyfindings" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
+                </div>
+        
+    </div>
+                <div class="row justify-content-center">
+                <div class="col-auto">
+                        <div class="bg-white p-2 mb-5 text-center">
+                            <img src="assets/images/kdf-icon.jpg" alt="KDF icon" class="floatl-left me-3">
+                            To explore interactive maps, graphics, and data, visit the BT23 data portal <strong>[NEED LINK]</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container mt-4">
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h3>Biomass Used Today</h3>
+                        <p>Today, bioenergy provides about 5% of U.S. energy, in the form of liquid fuels, power, and heat. Bioenergy resources are largely concentrated in the corn belt, Southeast timberlands, and metropolitan areas.</p>
+                        <p>Key metrics include:</p>
+                        <ul>
+                            <li>Corn to ethanol: ~150 million tons</li>
+                            <li>Wood to power: ~125 million tons</li>
+                            <li>Renewable natural gas and other uses: ~50 million tons</li>
+                            <li>Total used today: ~340 million tons.</li>
+                        </ul>
+                        <div class="well d-flex justify-content-center align-items-center my-4">
+                            <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                            <p class="mb-0 lh-sm">Read <strong>[LINK TO PDF]</strong> Chapter 2. Biomass Currently Used for Energy and Coproducts for more details.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <figure class="highcharts-figure">
+                        <div id="today"></div>
+                        <p class="highcharts-description lh-sm">Biomass used today. Visit the <strong>[NEED LINK]</strong> BT23 data portal for complete data.</p>
+                    </figure>
+                    </div>
+                </div>
+               
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h3>Additional Biomass in the Near-Term</h3>
+                        <h4>Growing Today's Underused Biomass Supply</h4>
+                        <p>Currently available but unused biomass can add around 300 million more tons per year, nearly doubling bioenergy resources currently used today. Underused biomass resources include unused wastes, residues from logging operations, and agricultural residues like corn stover.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <figure class="highcharts-figure">
+                            <div id="nearterm"></div>
+                            <p class="highcharts-description lh-sm">Additional biomass in the near-term. Visit the <strong>[NEED LINK]</strong> BT23 data portal for complete data.</p>
+                        </figure>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="accordion my-4" id="accordion1">
+                          <div class="accordion-item">
+                            <div class="accordion-header" id="headingWastes">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWastes" aria-expanded="false" aria-controls="collapseWastes">
+                                Wastes 
+                              </button>
+                            </div>
+                            <div id="collapseWastes" class="accordion-collapse collapse" aria-labelledby="headingWastes" data-bs-parent="#accordion1">
+                              <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <p>Wastes include municipal solid wastes; animal manures; sludge; food wastes; and waste fats, oils, and greases. Waste availability varies by price, and markets already exist for some wastes. The report excludes current uses of wastes.</p>
+                                        <p>Key metrics include:</p>
+                                        <ul>
+                                          <li>Total produced annually: ~460 million tons</li>
+                                        </ul>
+                                        <div class="well callout-green text-white">
+                                          BT23 estimated potential for bioenergy: <strong>~217 million tons.</strong>
+                                        </div>
+                                        <div class="well d-flex justify-content-center align-items-center my-4">
+                                            <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                                            <p class="mb-0 lh-sm">Read <strong>[NEED LINK]</strong> Chapter 3. Waste Resources and Byproducts for more details.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header" id="headingLoggingResidues">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLoggingResidues" aria-expanded="false" aria-controls="collapseLoggingResidues">
+                                Logging Residues 
+                              </button>
+                            </div>
+                            <div id="collapseLoggingResidues" class="accordion-collapse collapse" aria-labelledby="headingLoggingResidues" data-bs-parent="#accordion1">
+                              <div class="accordion-body">
+                                 <div class="row">
+                                    <div class="col-lg-7">
+                                        <p>The timber products industry harvests over 300 million tons per year for timber products. Residues, which include both logging and mill residues, are created during that process. BT23 estimates 20 million tons could be available within economic and environmental constraints. Another estimated 35 million tons of small-diameter (&lt;11 inch) trees could also be produced while meeting demands for sustained yield of timber products and retaining current forestland area.</p>
+                                        <p>Key metrics include:</p>
+                                        <ul>
+                                          <li>Total produced annually: 40 million tons</li>
+                                        </ul>
+                                        <div class="well callout-green text-white">
+                                            BT23 estimated potential for bioenergy: <strong>~20 million tons.</strong>
+                                        </div>
+                                        <div class="well d-flex justify-content-center align-items-center my-4">
+                                            <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                                            <p class="mb-0 lh-sm">Read <strong>[NEED LINK]</strong> Chapter 4. Biomass from the Forested Land Base for more details.</p>
+                                        </div>
+                                     </div>
+                                     <div class="col-lg-5">
+                                         <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="">
+                                     </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header" id="headingAgResidues">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgResidues" aria-expanded="false" aria-controls="collapseAGResidues">
+                                Agricultural Residues 
+                              </button>
+                            </div>
+                            <div id="collapseAgResidues" class="accordion-collapse collapse" aria-labelledby="headingAgResidues" data-bs-parent="#accordion1">
+                              <div class="accordion-body">
+                                 <div class="row">
+                                    <div class="col-lg-7">
+                                        <p>Agricultural residues&mdash;such as corn stover and wheat straw remaining in fields after harvest&mdash;play an important role in soil conservation. The BT23 constrains its estimate to a third of total available agricultural residues to maintain soil organic carbon and prevent wind and water erosion. Availability varies with local conditions and practices.</p>
+                                        <p>Key metrics include:</p>
+                                        <ul>
+                                          <li>Total produced annually: ~545 million tons</li>
+                                        </ul>
+                                        <div class="well callout-green text-white">
+                                            BT23 estimated potential for bioenergy: <strong>~175 million tons.</strong>
+                                        </div>
+                                        <div class="well d-flex justify-content-center align-items-center my-4">
+                                            <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                                            <p class="mb-0 lh-sm">Read <strong>[NEED LINK]</strong> Chapter 5. Biomass from Agriculture for more details.</p>
+                                        </div>
+                                     </div>
+                                     <div class="col-lg-5">
+                                         <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="">
+                                     </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Additional Biomass in Mature-Market Scenarios</h3>
+                        <h4>Reaching ~1 Billion Tons with Purpose-Grown Energy Crops</h4>
+                        <p>Under mature-market conditions, the United States has the potential to add an additional 400 million tons of biomass resources per year, bringing the total available biomass to more than 1 billion tons annually. The largest source of biomass in the future is purpose-grown energy crops with a potential to provide 300–600 million tons of biomass per year. Energy crops can be produced on about 7% of agricultural land while meeting projected demands for food, feed, and fiber.</p>
+                        <p>Purpose-grown energy crops are typically perennial plants grown for their large yields of biomass. Integrated landscape management is a strategy to grow energy crops in areas where they provide the greatest economic and environmental advantages, which include:</p>
+                        <ul>
+                            <li>Resiliency compared to annual crops</li>
+                            <li>Ability to thrive on land less advantageous for annual crops</li>
+                            <li>Potential to improve water quality and reduce soil erosion if integrated strategically on the agricultural landscape within conventional crops.</li>
+                        </ul>
+                        <p>A market for purpose-grown biomass crops would contribute to the economic stability of farming while meeting demands for conventional food, feed, and fiber products.</p>
+                        <h4>BT23 Estimates do not Represent all Available Biomass in the United States</h4>
+                        <p>BT23 estimates do not equal the total U.S. supply. Rather, they represent a fraction that might be collected sustainably&mdash;often alongside existing uses of biomass.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <figure class="highcharts-figure">
+                            <div id="maturemarket"></div>
+                            <p class="highcharts-description lh-sm">Additional biomass in mature market scenarios. Visit the <strong>[NEED LINK]</strong> BT23 data portal for complete data.</p>
+                        </figure>
+                    </div>
+                    
+                    <div class="bg-warning p-3 my-5 text-center"><strong>Add Carousel - Images needed</strong></div>
+                    
+                    <div class="col-lg-10">
+                        <div class="well d-flex justify-content-center align-items-center my-4">
+                            <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                            <p class="mb-0 lh-sm">Read <strong>[NEED LINK]</strong> Chapter 5. Biomass from Agriculture for more details.</p>
+                        </div>
+                        <h3>Food Security, Land Use Change, and Environmental Impacts from Biomass</h3>
+                        <p>BT23 illustrates how the United States can sustainably increase biomass supplies while continuing to support food security, thriving ecosystems, and beneficial uses for land. Its biomass estimates are constrained to ensure environmental sustainability and that future demands are met for food, feed, and fiber. Nevertheless, consistent monitoring, assessment, and adaptive management are essential to realize these sustainable supply opportunities. Good practices are needed to ensure biomass production has positive environmental outcomes.</p>
+                        <div class="well d-flex justify-content-center align-items-center my-4">
+                            <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                            <p class="mb-0 lh-sm">Read <strong>[NEED LINK]</strong> Chapter 6. Sustainability and Good Practices for more details.</p>
+                        </div>
+                        <!-- img left -->
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-4">
+                                <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Food Security</h4>
+                                <p>Potential impacts to food production and land-use change have been raised as a concerns of biomass production. To ensure future demands are met for food, feed, and fiber, BT23 constrains its biomass estimates in conjunction with these critical products.</p>
+                            </div>
+                        </div>
+                         <!-- img right -->
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-8">
+                                <h4>Land Use Change</h4>
+                                <p>BT23's mature-market simulations include establishing energy crops on 5%-10% of U.S. agricultural lands and increasing timber production by about 11%, with no decrease in forestlands. This production is modeled to have a less than 1% increase in food prices and a more than 25% increase in farm revenue.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="">
+                            </div>
+                        </div>
+                        <!-- img left -->
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-4">
+                                <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                           <h4>Environmental Sustainability</h4>
+                            <p>BT23's biomass estimates are constrained to promote net carbon sequestration, water regulation, and other ecosystem services. If land management practices deviate from the sustainability constraints assumed in this report, more biomass could be produced but with possible unintended consequences. For example, more agricultural residues could be available at risk of increasing soil erosion.</p>
+                        </div>
+                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <h3>Emerging Biomass Resources: Microalgae, Macroalgae, and Point-Source Waste Carbon Dioxide</h3>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Beyond the billion-ton biomass estimates in BT23, the following resources could potentially expand that supply with technological innovations and cost reductions: </p>
+                                <ul>
+                                    <li>Microalgae&mdash;single-celled algae cultivated in freshwater or partially saline water </li>
+                                    <li>Macroalgae&mdash;multicellular algae cultivated on suspended farm systems in the ocean</li>
+                                    <li>Point-source waste carbon dioxide (CO2) from power plants, cement plants, and other point-source industries.</li>
+                                </ul>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <figure class="highcharts-emerging">
+                                    <div id="emerging"></div>
+                                </figure>
+                            </div>
+                            <div class="col-10">
+                                <div class="well d-flex justify-content-center align-items-center my-4">
+                                    <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                                    <p class="mb-0 lh-sm">Read <strong>[LINK TO PDF]</strong> Chapter 7. Microalgae, Macroalgae, and Point-Source Carbon Dioxide Waste Streams for more details.</p>
+                                </div>
+                                <h3>What's Next for Biomass Resources: A Deeper Dive</h3>
+                                <p>The nation has a portfolio of biomass resources. Some are used today. Some are available now but underutilized. Some could be available in the future&mdash;with different levels of economic accessibility. Together, U.S. biomass resources represent an opportunity to provide renewable energy for hard-to-electrify sectors such as aviation, marine, and rail&mdash;key components of a decarbonized transportation sector.</p>
+                                <div class="well d-flex justify-content-center align-items-center my-4">
+                                    <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
+                                    <p class="mb-0 lh-sm">Read <strong>[LINK TO PDF]</strong> Chapter 8. Looking Forward and Next Steps for more details.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /row -->
+        </section>
+        
+        
+         <section class="bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Case Studies</h2>
+                        <div class="row bg-white pt-3 mb-3">
+                            <div class="col-lg-6 mb-3">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c21QZnQtGqo?si=QppoJiqnI8DS0sxz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                                </div>
+                                <p class="caption mb-0">Text version</p>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c21QZnQtGqo?si=QppoJiqnI8DS0sxz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                                </div>
+                                <p class="caption mb-0">Text version</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+             </div>
+        </section>
+        
+        <section>
+            <div class="container mt-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Downloads</h2>
+                        <div class="accordion my-4" id="accordion2">
+                          <div class="accordion-item">
+                            <div class="accordion-header" id="heading2a">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a" aria-expanded="false" aria-controls="collapse2a">
+                                BT23 Full Report and Executive Summary
+                              </button>
+                            </div>
+                            <div id="collapse2a" class="accordion-collapse collapse" aria-labelledby="heading2a" data-bs-parent="#accordion2">
+                              <div class="accordion-body">
+                                  <p>2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</p>
+                                  <p>Executive Summary</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header" id="heading2b">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2b" aria-expanded="false" aria-controls="collapse2b">
+                                BT23 Report Chapters 
+                              </button>
+                            </div>
+                            <div id="collapse2b" class="accordion-collapse collapse" aria-labelledby="heading2b" data-bs-parent="#accordion2">
+                              <div class="accordion-body">
+                                  <p>Chapter 1. Background and Introduction</p>
+                                    <p>Chapter 2. Biomass Currently Used for Energy and Coproducts</p>
+                                    <p>Chapter 3. Waste Resources and Byproducts</p>
+                                    <p>Chapter 4. Biomass from the Forested Land Base</p>
+                                    <p>Chapter 5. Biomass from Agriculture</p>
+                                    <p>Chapter 6. Sustainability and Good Practices</p>
+                                    <p>Chapter 7. Microalgae, Macroalgae, and Point-Source Carbon Dioxide Waste Streams</p>
+                                    <p>Chapter 8. Looking Forward and Next Steps</p>
+                                </div>
+                          </div>
+                        </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header" id="heading2c">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="false" aria-controls="collapse2c">
+                                BT23 Appendices 
+                              </button>
+                            </div>
+                            <div id="collapse2c" class="accordion-collapse collapse" aria-labelledby="heading2c" data-bs-parent="#accordion2">
+                              <div class="accordion-body">
+                                  <p>Appendix A. Appendix to Chapter 2: Biomass Currently Used for Energy and Coproducts</p>
+                                    <p>Appendix B. Appendix to Chapter 4: Biomass from the Forested Land Base</p>
+                                    <p>Appendix C. Appendix to Chapter 5: Biomass from Agriculture</p>
+                                    <p>Appendix D. Appendix to Chapter 7: Emerging Resources</p>
+                                </div>
+                          </div>
+                        </div>
+                          
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+<div class="mt-5"></div>
+
+
+    
+
+    
+    <!-- Core Bootstrap javascript
+     ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--highcharts-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="client/js/highchart-today.js"></script>
+    <script src="client/js/highchart-nearterm.js"></script>
+    <script src="client/js/highchart-maturemarket.js"></script>
+    <script src="client/js/highchart-emerging.js"></script>
+
+   
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+.cover-image-holder{max-height:300px;height:300px;overflow:hidden;}
+.cover-text{background-color:rgba(0,0,0,0.67);top:50%;left:50%;transform:translate(-50%,-50%);position:absolute;width:55%;}
+.bg-light {background-color: #F0F0F0 !important;}
+.lead {font-size: 1.35em;}
+.navbar-light .navbar-nav .nav-link {color: #545454;}
+.larger {font-size:1.625em;}
+.well {background-color: #F5F5F5;border:none;border-radius: 0; box-shadow: none;}
+.callout-green {background-color: #35763B;color:#fff; padding:1em;}
+.callout-green p {line-height:1.25;}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+}
+
+/* side-by-side carousel */
+#keyfindings p.caption {
+	color: #222;
+	font-size: 1em;
+    width:600px;
+    height:55px;
+    line-height:1.2;
+    margin-top:0.25em;
+}
+
+#keyfindings .carousel-control-next, #keyfindings .carousel-control-prev {
+	position: relative;
+	color: #0071b8;
+	opacity: 1;
+	transition: opacity .15s ease;
+	display: inline;
+}
+#keyfindings .carousel-control-next:hover, #keyfindings .carousel-control-prev:hover {text-decoration:underline;}
+#keyfindings .fas {
+	font-size: 0.85em;
+	line-height: 1;
+}
+#keyfindings .carousel-control-next .fas {margin: 0 0.5em; color: #0071b8;}
+#keyfindings .carousel-control-prev .fas {margin: 0 0.5em 0 0; color: #0071b8;}
+.slideshownav {margin-top: 0;}
