@@ -8,13 +8,13 @@ Highcharts.chart('emerging', {
   chart: {
         type: 'column'
     },
-//  legend: {
-//        align: 'right',
-//        verticalAlign: 'top',
-//        layout: 'vertical',
-//        x: 0,
-//        y: 100
-//    },
+  legend: {
+        align: 'right',
+        verticalAlign: 'top',
+        layout: 'vertical',
+        x: 0,
+        y: 100
+    },
     title: {
         text: 'Emerging Biomass Potential'
     },
@@ -27,6 +27,7 @@ Highcharts.chart('emerging', {
             text: 'Dry Short Tons (millions)'
         },
         stackLabels: {
+            style: {fontSize: '20px'},
             enabled: true
         }
     },

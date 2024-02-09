@@ -28,6 +28,7 @@ Highcharts.chart('nearterm', {
             text: 'Dry Short Tons (millions)'
         },
         stackLabels: {
+            style: {fontSize: '20px'},
             enabled: true
         }
     },

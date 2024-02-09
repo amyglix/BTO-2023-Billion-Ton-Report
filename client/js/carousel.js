@@ -30,18 +30,30 @@ class Carousel {
       this.carouselData = [
         {
           'id': '1',
-          'src': 'https://video.stratus.nrel.gov/bt23-county-map-all-scenarios.gif',
+          'src': 'assets/images/pie-wastes.png',
         },
         {
           'id': '2',
-          'src': 'https://video.stratus.nrel.gov/bt23-treemap-all-scenarios.gif',
+          'src': 'assets/images/pie-logging.png',
         },
         {
           'id': '3',
-          'src': 'https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios.gif',
+          'src': 'assets/images/pie-ag-residues.png',
+        },
+        {
+          'id': '4',
+          'src': 'assets/images/pie-tree-biomass.png',
+        },
+        {
+          'id': '5',
+          'src': 'assets/images/pie-forest-mill-residues.png',
+        },
+        {
+          'id': '6',
+          'src': 'assets/images/pie-energy-crops.png',
         }
       ];
-      this.carouselInView = [1, 2, 3];
+      this.carouselInView = [1, 2, 3, 4, 5, 6];
       this.carouselContainer;
       this.carouselPlayState;
     }
