@@ -30,6 +30,12 @@
 html {
   scroll-padding-top: 4rem;
 }
+    .carousel-indicators {bottom:-25px;}
+    .carousel-indicators .active {
+        width: auto;
+        height: auto;
+    }
+
 </style>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <title>2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</title>
@@ -366,7 +372,7 @@ html {
             
                 
                 <div class="col-lg-8">
-                    <div id="piecharts" class="carousel slide my-5" data-ride="carousel" data-bs-interval="false" data-aos="fade-up">
+                    <div id="piecharts" class="carousel carousel-dark slide my-5" data-ride="carousel" data-bs-interval="false" data-aos="fade-up">
                         <div class="carousel-inner">
 
                         <div class="carousel-item active text-center">
@@ -393,12 +399,19 @@ html {
                         <div class="lead text-center mt-3 slideshownav">
                             <a class="carousel-control-prev" type="button" data-bs-target="#piecharts" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a> | <a class="carousel-control-next" type="button" data-bs-target="#piecharts" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
                         </div>                    
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                    </div>
 
                     </div>
                 </div>
-
-
-
                 <div class="col-lg-8">
                     <div class="well d-flex justify-content-center align-items-center my-4" data-aos="fade-up">
                         <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
@@ -419,31 +432,31 @@ html {
             
             
             <!-- img left -->
-            <div class="row my-3 align-items-center">
+            <div class="row my-3 justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="" data-aos="fade-right">
+                    <img src="assets/images/food-security-getty1165611102.jpg" class="img-fluid mt-2 mb-3" alt="" data-aos="fade-right">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <h4>Food Security</h4>
                     <p>Potential impacts to food production and land-use change have been raised as a concerns of biomass production. To ensure future demands are met for food, feed, and fiber, BT23 constrains its biomass estimates in conjunction with these critical products.</p>
                 </div>
             </div>
              <!-- img right -->
-            <div class="row my-3 align-items-center">
-                <div class="col-md-8">
+            <div class="row my-3 justify-content-center align-items-center">
+                <div class="col-md-4 order-lg-2">
+                    <img src="assets/images/land-use-change-getty1815059085.jpg" class="img-fluid mt-2 mb-3" alt="" data-aos="fade-left">
+                </div>
+                <div class="col-md-6">
                     <h4>Land Use Change</h4>
                     <p>BT23's mature-market simulations include establishing energy crops on 5%&ndash;10% of U.S. agricultural lands and increasing timber production by about 11%, with no decrease in forestlands. This production is modeled to have a less than 1% increase in food prices and a more than 25% increase in farm revenue.</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="" data-aos="fade-left">
-                </div>
             </div>
             <!-- img left -->
-            <div class="row my-3 align-items-center">
+            <div class="row my-3 justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <img src="https://placehold.co/720x400" class="img-fluid mt-2 mb-3" alt="" data-aos="fade-right">
+                    <img src="assets/images/environmental-sustainability-getty1469430884.jpg" class="img-fluid mt-2 mb-3" alt="" data-aos="fade-right">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                    <h4>Environmental Sustainability</h4>
                     <p>BT23's biomass estimates are constrained to promote net carbon sequestration, water regulation, and other ecosystem services. If land management practices deviate from the sustainability constraints assumed in this report, more biomass could be produced but with possible unintended consequences. For example, more agricultural residues could be available at risk of increasing soil erosion.</p>
                 </div>
@@ -477,8 +490,12 @@ html {
                     </div>
                 </div>
             </div>
-            <h3>What's Next for Biomass Resources: A Deeper Dive</h3>
-            <p>The nation has a portfolio of biomass resources. Some are used today. Some are available now but underutilized. Some could be available in the future&mdash;with different levels of economic accessibility. Together, U.S. biomass resources represent an opportunity to provide renewable energy for hard-to-electrify sectors such as aviation, marine, and rail&mdash;key components of a decarbonized transportation sector.</p>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10">
+                    <h3>What's Next for Biomass Resources: A Deeper Dive</h3>
+                    <p>The nation has a portfolio of biomass resources. Some are used today. Some are available now but underutilized. Some could be available in the future&mdash;with different levels of economic accessibility. Together, U.S. biomass resources represent an opportunity to provide renewable energy for hard-to-electrify sectors such as aviation, marine, and rail&mdash;key components of a decarbonized transportation sector.</p>
+                </div>
+            </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="well d-flex justify-content-center align-items-center my-4" data-aos="fade-up">
@@ -566,7 +583,7 @@ html {
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <h2>Downloads</h2>
-                    <div class="accordion my-4" id="accordion2">
+                    <div class="accordion my-4" id="accordion2" data-aos="fade-up">
                       <div class="accordion-item">
                         <div class="accordion-header" id="heading2a">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a" aria-expanded="false" aria-controls="collapse2a">
@@ -620,9 +637,33 @@ html {
         </div>
     </div>
     </section>
+    
+    <section class="bg-light" id="past">
+        <div class="container mt-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10">
+                  <h2>Past Reports</h2>
+                    <p>Learn about <strong>[LINK TO NEW PAGE/SECTION]</strong> the history of the billion-ton reports</p>
+                    <div class="row lh-sm"  data-aos="fade-up">
+                        <div class="col-lg-2 col-md-3">
+                            <img src="assets/images/bt16-cover.png" alt="2016 Billion-Ton Report Cover" class="img-fluid mb-2" />
+                            <p><a href="https://www.energy.gov/eere/bioenergy/2016-billion-ton-report">2016 Billion-Ton Report</a></p>
+                        </div>
+                         <div class="col-lg-2 col-md-3">
+                             <img src="assets/images/bt11-cover.png" alt="2011 Billion-Ton Report Cover" class="img-fluid mb-2" />
+                            <p><a href="https://www.energy.gov/sites/prod/files/2015/01/f19/billion_ton_update_0.pdf">2011 U.S. Billion-Ton Update</a></p>
+                        </div>
+                         <div class="col-lg-2 col-md-3">
+                             <img src="assets/images/bt05-cover.png" alt="2005 Billion-Ton Report Cover" class="img-fluid mb-2" />
+                            <p><a href="https://www1.eere.energy.gov/bioenergy/pdfs/final_billionton_vision_report2.pdf">2005 Technical Feasibility of Billion-Ton Annual Supply</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<div class="mt-5"></div>
 
 
 
