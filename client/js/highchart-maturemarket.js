@@ -5,7 +5,7 @@ Highcharts.setOptions({
   }
 })
 Highcharts.chart('maturemarket', {
-    colors:['#f67f2b','#f9be94', '#2d863f','#5d0600', '#fbd603'],
+    colors:['#f9be94', '#f67f2b', '#2d863f','#5d0600', '#fbd603'],
   chart: {
         type: 'column'
     },
@@ -17,10 +17,10 @@ Highcharts.chart('maturemarket', {
         y: 100
     },
     title: {
-        text: 'Emerging Biomass Potential'
+        text: 'Mature Market Biomass Potential'
     },
     xAxis: {
-        categories: ['Emerging Potential']
+        categories: ['Mature-Market Medium']
     },
     yAxis: {
         min: 0,
@@ -46,16 +46,16 @@ Highcharts.chart('maturemarket', {
     },
     series: [{
          name: 'Agriculture: Energy Crops',
-        data: [666]
+        data: [426]
       },{
          name: 'Agriculture: Residues and Wastes',
-        data: [211]
+        data: [189]
       },{
         name: 'Forestland',
         data: [63]
      },{
         name: 'Wastes and Byproducts',
-        data: [217]
+        data: [218]
       },{
         name: 'Currently Used Biomass',
         data: [342]

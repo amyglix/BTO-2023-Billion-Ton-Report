@@ -4,7 +4,7 @@ Highcharts.setOptions({
   }
 })
 Highcharts.chart('emerging', {
-    colors:['#1a5d7a','#3eb5ef','#f67f2b','#f9be94', '#2d863f','#5d0600', '#fbd603'],
+    colors:['#1a5d7a','#3eb5ef','#f9be94','#f67f2b','#2d863f','#5d0600', '#fbd603'],
   chart: {
         type: 'column'
     },
@@ -19,7 +19,7 @@ Highcharts.chart('emerging', {
         text: 'Emerging Biomass Potential'
     },
     xAxis: {
-        categories: ['Emerging Potential']
+        categories: ['Emerging']
     },
     yAxis: {
         min: 0,
@@ -60,7 +60,7 @@ Highcharts.chart('emerging', {
         data: [63]
      },{
         name: 'Wastes and Byproducts',
-        data: [217]
+        data: [218]
       },{
         name: 'Currently Used Biomass',
         data: [342]

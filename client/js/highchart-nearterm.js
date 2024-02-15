@@ -5,7 +5,7 @@ Highcharts.setOptions({
   }
 })
 Highcharts.chart('nearterm', {
-    colors:['#f9be94', '#2d863f','#5d0600', '#fbd603'],
+    colors:['#f67f2b', '#2d863f','#5d0600', '#fbd603'],
   chart: {
         type: 'column'
     },
@@ -17,10 +17,10 @@ Highcharts.chart('nearterm', {
         y: 100
     },
     title: {
-        text: 'Emerging Biomass Potential'
+        text: 'Near-Term Biomass Potential'
     },
     xAxis: {
-        categories: ['Emerging Potential']
+        categories: ['Near-Term']
     },
     yAxis: {
         min: 0,
@@ -46,13 +46,13 @@ Highcharts.chart('nearterm', {
     },
     series: [{
         name: 'Agriculture: Residues and Wastes',
-        data: [211]
+        data: [140]
       },{
         name: 'Forestland',
-        data: [63]
+        data: [31]
      },{
         name: 'Wastes and Byproducts',
-        data: [217]
+        data: [179]
       },{
         name: 'Currently Used Biomass',
         data: [342]
