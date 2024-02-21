@@ -1,4 +1,3 @@
-// Carousel with overlapping items
 'use strict';
 
 class Carousel {
@@ -8,27 +7,27 @@ class Carousel {
     this.carouselData = [
       {
         'id': '1',
-        'src': 'https://www.nrel.gov/sandbox/assets/images/pie-ag-residues.png',
+        'src': 'https://video.stratus.nrel.gov/pie-ag-residues.png',
       },
       {
         'id': '2',
-        'src': 'https://www.nrel.gov/sandbox/assets/images/pie-energy-crops.png',
+        'src': 'https://video.stratus.nrel.gov/pie-energy-crops.png',
       },
       {
         'id': '3',
-        'src': 'https://www.nrel.gov/sandbox/assets/images/pie-wastes.png',
+        'src': 'https://video.stratus.nrel.gov/pie-wastes.png',
       },
       {
         'id': '4',
-        'src': 'https://www.nrel.gov/sandbox/assets/images/pie-logging.png',
+        'src': 'https://video.stratus.nrel.gov/pie-logging.png',
       },
       {
         'id': '5',
-        'src': 'https://www.nrel.gov/sandbox/assets/images/pie-forest-mill-residues.png',
+        'src': 'https://video.stratus.nrel.gov/pie-forest-mill-residues.png',
       },
       {
         'id': '6',
-        'src': 'https://www.nrel.gov/sandbox/assets/images/pie-tree-biomass.png',
+        'src': 'https://video.stratus.nrel.gov/pie-tree-biomass.png',
       }
     ];
     this.carouselInView = [1, 2, 3, 4, 5, 6];
@@ -57,7 +56,7 @@ class Carousel {
       container.append(carouselItem);
       
       // Add item attributes
-      carouselItem.className = `carousel-item carousel-item-${index + 1}`;
+      carouselItem.className = `carousel2-item carousel-item-${index + 1}`;
       carouselItem.src = item.src;
       carouselItem.setAttribute('loading', 'lazy');
       // Used to keep track of carousel items, infinite items possible in carousel however min 5 items required
@@ -117,7 +116,7 @@ class Carousel {
 
     // Update the css class for each carousel item in view
     this.carouselInView.forEach((item, index) => {
-      this.carouselContainer.children[index].className = `carousel-item carousel-item-${item}`;
+      this.carouselContainer.children[index].className = `carousel2-item carousel-item-${item}`;
     });
 
     // Using the first 5 items in data array update content of carousel items in view
@@ -135,7 +134,7 @@ class Carousel {
 
     // Update the css class for each carousel item in view
     this.carouselInView.forEach((item, index) => {
-      this.carouselContainer.children[index].className = `carousel-item carousel-item-${item}`;
+      this.carouselContainer.children[index].className = `carousel2-item carousel-item-${item}`;
     });
 
     // Using the first 5 items in data array update content of carousel items in view
@@ -191,7 +190,7 @@ class Carousel {
 }
 
 // Refers to the carousel root element you want to target, use specific class selectors if using multiple carousels
-const el = document.querySelector('.carousel');
+const el = document.querySelector('.carousel2');
 // Create a new carousel object
 const exampleCarousel = new Carousel(el);
 // Setup carousel and methods

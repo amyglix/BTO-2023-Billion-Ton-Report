@@ -18,8 +18,8 @@
 <link href="client/css/billion-ton-report.css" rel="stylesheet">
 <!-- Animate on Scroll https://michalsnik.github.io/aos/ -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<!-- overlapping carousel
-<link rel="stylesheet" href="client/css/overlapping-carousel.css" /> -->
+<!-- overlapping carousel -->
+<link rel="stylesheet" href="client/css/overlapping-carousel.css" />
 <!-- test zone -->
 <style>
 #boxThis {width:100%; text-align: center;}  
@@ -139,7 +139,7 @@ html {
             </div>
         </div>
     </div>
-    </div>
+</div>
 
     <section class="bg-light" id="data">
         <div class="container">
@@ -296,7 +296,7 @@ html {
                           <div class="accordion-body">
                              <div class="row">
                                 <div class="col-lg-7">
-                                    <p>The timber products industry harvests ~200 million tons per year for timber products. Residues, which include both logging and mill residues, are created during that process. BT23 estimates 20 million tons could be available within economic and environmental constraints. Another estimated 35 million tons of small-diameter (&lt;11 inch) trees could also be produced while meeting demands for sustained yield of timber products and retaining current forestland area.</p>
+                                    <p>The timber products industry harvests ~200 million tons per year for timber products. Residues, which include both logging and mill residues, are created during that process. BT23 estimates ~20 million tons could be available within economic and environmental constraints. Another estimated 35 million tons of small-diameter (&lt;11 inch) trees could also be produced while meeting demands for sustained yield of timber products and retaining current forestland area.</p>
                                     <p>Key metrics include:</p>
                                     <ul>
                                       <li>Total produced annually: 40 million tons</li>
@@ -372,10 +372,11 @@ html {
                     </figure>
                 </div>
 
-            
+                
+                
                 
                 <div class="col-lg-8">
-                    <div id="piecharts" class="carousel carousel-dark slide my-5" data-ride="carousel" data-bs-interval="false">
+                    <!--div id="piecharts" class="carousel carousel-dark slide my-5" data-ride="carousel" data-bs-interval="false">
                         <div class="carousel-inner">
 
                         <div class="carousel-item active text-center">
@@ -405,7 +406,7 @@ html {
 
                         </div>
                         <!-- navigation buttons -->
-                        <div class="lead text-center mt-3 slideshownav">
+                        <!--div class="lead text-center mt-3 slideshownav">
                             <a class="carousel-control-prev" type="button" data-bs-target="#piecharts" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a> | <a class="carousel-control-next" type="button" data-bs-target="#piecharts" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
                         </div>                    
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -420,7 +421,11 @@ html {
                     </div>
 
                     </div>
-                    <!-- div class="carousel"></div -->
+
+                    <!-- Overlapping Carousel -->
+                    <div class="carousel2" id="piecharts"></div>
+                    
+                    
                 </div>
                 <div class="col-lg-10">
                     <div class="well d-flex justify-content-center align-items-center my-4">
@@ -497,7 +502,7 @@ html {
                 <div class="col-lg-10">
                     <div class="well d-flex justify-content-center align-items-center my-4">
                         <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
-                        <p class="mb-0 lh-sm">Read <strong>[LINK TO PDF]</strong> Chapter 7. Microalgae, Macroalgae, and Point-Source Carbon Dioxide Waste Streams for more details.</p>
+                        <p class="mb-0 lh-sm">Read <strong>[LINK TO PDF]</strong> Chapter 7. Emerging Resources: Microalgae, Macroalgae, and Point-Source Carbon Dioxide Waste Streams for more details.</p>
                     </div>
                 </div>
             </div>
@@ -505,7 +510,7 @@ html {
                 <div class="col-lg-10">
                     <h3>What's Next for Biomass Resources: A Deeper Dive</h3>
                     <img src="assets/images/es_mmh_emerging_map_v0.2.svg" alt="A county-level U.S. map showing biomass density. Complete data can be found on the BT23 data portal, which can be accessed at https://biokdf.ornl.gov/bt23-data-portal/" class="img-fluid">
-                    <p class="caption">Available biomass by county (in dry short tons per square mile) in BT23’s emerging resource scenario. Visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal</a> for complete data.</p>
+                    <p class="caption">Available biomass by county (in dry short tons per square mile) in BT23's emerging resource scenario (excludes macroalgae and carbon dioxide). Visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal for complete data</a>.</p>
                     <p>The nation has a portfolio of biomass resources. Some are used today. Some are available now but underutilized. Some could be available in the future&mdash;with different levels of economic accessibility. Together, U.S. biomass resources represent an opportunity to provide renewable energy for hard-to-electrify sectors such as aviation, marine, and rail&mdash;key components of a decarbonized transportation sector.</p>
                 </div>
             </div>
@@ -624,7 +629,7 @@ html {
                                 <p>Chapter 4. Biomass from the Forested Land Base</p>
                                 <p>Chapter 5. Biomass from Agriculture</p>
                                 <p>Chapter 6. Sustainability and Good Practices</p>
-                                <p>Chapter 7. Microalgae, Macroalgae, and Point-Source Carbon Dioxide Waste Streams</p>
+                                <p>Chapter 7. Emerging Resources: Microalgae, Macroalgae, and Point-Source Carbon Dioxide Waste Streams</p>
                                 <p>Chapter 8. Looking Forward and Next Steps</p>
                             </div>
                       </div>
@@ -698,7 +703,7 @@ html {
 <script src="client/js/highchart-nearterm.js"></script>
 <script src="client/js/highchart-maturemarket.js"></script>
 <script src="client/js/highchart-emerging.js"></script>
-<!-- src="client/js/overlapping-carousel.js"></script -->
+<script src="client/js/overlapping-carousel.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
