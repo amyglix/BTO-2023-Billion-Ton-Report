@@ -21,6 +21,19 @@
 .anim{opacity:0;transition:all 0.5s ease-in-out;will-change:transform;}
 .anim-b,.anim-l,.anim-r{transform:translateY(50px);}
 .anim-done{opacity:1 !important;transform:translate(0,0) !important;}
+#boxThis {width:100%; text-align: center;}  
+#boxThis.box {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+  }
+html {scroll-padding-top: 4rem;}
+.carousel-indicators {bottom:-25px;}
+.carousel-indicators .active {
+    width: auto;
+    height: auto;
+}
 
 /* highcharts */
 .highcharts-figure,

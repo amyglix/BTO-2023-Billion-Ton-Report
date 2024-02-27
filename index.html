@@ -15,59 +15,23 @@
 <!-- Site CSS -->
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
 <link href="client/css/app.min.css" rel="stylesheet">
-<link href="client/css/billion-ton-report.css" rel="stylesheet">
+<link href="client/css/billion-ton-report-min.css" rel="stylesheet">
 <!-- Animate on Scroll https://michalsnik.github.io/aos/ -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- overlapping carousel -->
-<link rel="stylesheet" href="client/css/overlapping-carousel.css" />
-<!-- test zone -->
-<style>
-#boxThis {width:100%; text-align: center;}  
-#boxThis.box {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-  }
-html {
-  scroll-padding-top: 4rem;
-}
-    .carousel-indicators {bottom:-25px;}
-    .carousel-indicators .active {
-        width: auto;
-        height: auto;
-    }
-
-</style>
+<link rel="stylesheet" href="client/css/overlapping-carousel-min.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <title>2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</title>
-
-<!-- Google Analytics
-     ================================================== -->
-<script>
- (function() {
-   var so = document.createElement('script'); so.type = 'text/javascript'; so.async = true;
-   so.src = '//www.energy.gov/includes/ga/eere.js';
-   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(so, s);
- })();
-</script>
-
 </head>
-
 <body>
-
 <a href="#maincontent" class="sr-only">Skip to main content</a> 
-
-
-
-
 <!-- BEGIN CONTENT -->
 <div class="container-fluid px-0">  
 <section>
 <!-- video -->
 <div class="position-relative">
   <div class="cover-image-holder">
-     <video autoplay="autoplay" class="img-fluid" loop="loop" muted="muted" poster="https://video.stratus.nrel.gov/billion-ton-report-video-4-poster.jpg">
+     <video autoplay="autoplay" loop="loop" muted="muted" poster="https://video.stratus.nrel.gov/billion-ton-report-video-4-poster.jpg">
       <source src="https://video.stratus.nrel.gov/billion-ton-report-video-4.mp4" type="video/mp4" />
       Your browser does not support the video tag. 
     </video>
@@ -156,41 +120,38 @@ html {
                         <div class="carousel-inner">
 
                         <div class="carousel-item active text-center">
-                            <!--img class="" src="https://video.stratus.nrel.gov/bt23-county-map-all-scenarios.gif" alt="ALT TEXT NEEDED" / -->
                             <div class="ratio ratio-16x9">
                                 <video autoplay="autoplay" loop="loop" preload="auto" class="embed-responsive-item vid" poster="https://video.stratus.nrel.gov/bt23-county-map-all-scenarios.jpg" aria-label="Animation showing map interactivity" aria-describedby="videosummary1">
                                 <source src="https://video.stratus.nrel.gov/bt23-county-map-all-scenarios.mp4" type="video/mp4" />
                                     Please update your browser to view this video.
                                 </video>
-                            
                             </div>
-                            <p id="videosummary1" class="caption text-center mx-auto">BT23 includes county-level resource assessments.</p>
+                            <p id="videosummary1" class="caption text-center mx-auto"><span class="sr-only">A brief animation showing interactivity of maps on the BT23 data portal, which can be accessed at https://bioenergykdf.ornl.gov/bt23-data-portal.</span> BT23 includes county-level resource assessments.</p>
                         </div>
                         <div class="carousel-item  text-center">
-                            <!-- img class="" src="https://video.stratus.nrel.gov/bt23-treemap-all-scenarios.gif" alt="ALT TEXT NEEDED" / -->
-                                <div class="ratio ratio-16x9">
+                            <div class="ratio ratio-16x9">
                                     <video autoplay="autoplay" loop="loop" preload="auto" class="embed-responsive-item vid" poster="https://video.stratus.nrel.gov/bt23-treemap-all-scenarios.jpg" aria-label="Animation of treemap visualizations" aria-describedby="videosummary2">
                                     <source src="https://video.stratus.nrel.gov/bt23-treemap-all-scenarios.mp4" type="video/mp4" />
                                     Please update your browser to view this video.
                                     </video>
                                 </div>
-                                <p id="videosummary2" class="caption text-center mx-auto">In its mature-market medium scenario, BT23 estimates that 1.2 billion dry tons of biomass could be available every year in the United States.</p>
+                                <p id="videosummary2" class="caption text-center mx-auto"><span class="sr-only">A brief animation showing interactivity of treemap visualizations on the BT23 data portal, which can be accessed at https://bioenergykdf.ornl.gov/bt23-data-portal.</span> In its mature-market medium scenario, BT23 estimates that 1.2 billion dry tons of biomass could be available every year in the United States.</p>
                         </div>
                         <div class="carousel-item text-center">
                             <!--img class="" src="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios.gif" alt="ALT TEXT NEEDED" / -->
                                 <div class="ratio ratio-16x9">
                                     <video autoplay="autoplay" loop="loop" preload="auto" class="embed-responsive-item vid" poster="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios.jpg" aria-label="Animation of step-wise supply charts" aria-describedby="videosummary3">
-                                        <source src="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios.mp4" type="video/mp4"  />
+                                        <source src="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios-v2.mp4" type="video/mp4"  />
                                     Please update your browser to view this video.
                                     </video>
                                 </div>
-                                <p id="videosummary3" class="caption text-center mx-auto">Not all biomass resources cost the same or are worth the same, and supplies increase with price. Behind the simplified supply summaries is an array of resources available at different prices.</p>
+                                <p id="videosummary3" class="caption text-center mx-auto"><span class="sr-only">A brief animation showing interactivity of step-wise supply charts on the BT23 data portal, which can be accessed at https://bioenergykdf.ornl.gov/bt23-data-portal.</span> Not all biomass resources cost the same or are worth the same, and supplies increase with price. Behind the simplified supply summaries is an array of resources available at different prices.</p>
                         </div>
 
                         </div>
                         <!-- navigation buttons -->
                         <div class="lead text-center slideshownav">
-                            <a class="carousel-control-prev" type="button" data-bs-target="#keyfindings" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a> | <a class="carousel-control-next" type="button" data-bs-target="#keyfindings" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
+                            <a class="carousel-control-prev" type="button" data-bs-target="#keyfindings" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a>&nbsp;&nbsp;&nbsp;<a class="carousel-control-next" type="button" data-bs-target="#keyfindings" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
                         </div>                    
 
                     </div>
@@ -201,7 +162,7 @@ html {
             <div class="col-auto">
                     <div class="bg-white p-2 mb-5 text-center">
                         <img src="assets/images/kdf-icon.jpg" alt="KDF icon" class="floatl-left me-3">
-                        To explore interactive maps, graphics, and data, visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal</a>.
+                        To explore interactive maps, graphics, and data, visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a>.
                     </div>
                 </div>
             </div>
@@ -234,7 +195,7 @@ html {
                 <div class="col-lg-4">
                     <figure class="highcharts-figure mt-0" data-aos="fade-left" data-aos-offset="200">
                     <div id="today"></div>
-                    <p class="highcharts-description lh-sm">Biomass used today. Visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal</a> for complete data.</p>
+                    <p class="highcharts-description lh-sm">Biomass used today. Visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a> for complete data.</p>
                 </figure>
                 </div>
             </div>
@@ -251,7 +212,7 @@ html {
                 <div class="col-lg-4">
                     <figure class="highcharts-figure mt-0" data-aos="fade-left" data-aos-offset="200">
                         <div id="nearterm"></div>
-                        <p class="highcharts-description lh-sm">Additional biomass in the BT23 near-term scenario. Visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal</a> for complete data.</p>
+                        <p class="highcharts-description lh-sm">Additional biomass in the BT23 near-term scenario. Visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a> for complete data.</p>
                     </figure>
                 </div>
                 <div class="col-lg-10">
@@ -310,7 +271,7 @@ html {
                                     </div>
                                  </div>
                                  <div class="col-lg-5">
-                                     <img src="assets/images/logging-residues-getty1024531572.jpg" class="img-fluid mt-2 mb-3" alt="A forestry plantation.">
+                                     <img src="assets/images/logging-residues-getty-1209083025.jpg" class="img-fluid mt-2 mb-3" alt="A forestry plantation.">
                                  </div>
                           </div>
                         </div>
@@ -368,7 +329,7 @@ html {
                 <div class="col-lg-4">
                     <figure class="highcharts-figure mt-0" data-aos="fade-left" data-aos-offset="200">
                         <div id="maturemarket"></div>
-                        <p class="highcharts-description lh-sm">Additional biomass in the BT23 mature-market medium scenario. Visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal</a> for complete data.</p>
+                        <p class="highcharts-description lh-sm">Additional biomass in the BT23 mature-market medium scenario. Visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a> for complete data.</p>
                     </figure>
                 </div>
 
@@ -376,56 +337,8 @@ html {
                 
                 
                 <div class="col-lg-8">
-                    <!--div id="piecharts" class="carousel carousel-dark slide my-5" data-ride="carousel" data-bs-interval="false">
-                        <div class="carousel-inner">
-
-                        <div class="carousel-item active text-center">
-                            <h4 class="h3 text-center">Total U.S. Waste Resources</h4>
-                            <img class="" src="assets/images/pie-wastes.png" alt="BT23 estimate for bioenergy (based on BT23 mature-market medium scenario) is 217 million tons/yr equivalent. Recycled, current bioenergy, and other uses is 235 million tons/yr equivalent." />
-                        </div>
-                        <div class="carousel-item  text-center">
-                            <h4 class="h3 text-center">Total U.S. Logging Residues</h4>
-                            <img class="" src="assets/images/pie-logging.png" alt="BT23 estimate for bioenergy (based on BT23 mature-market medium scenario) is 19 million tons/yr equivalent. Additional in forest (not harvested) is 23 million tons/yr equivalent." />
-                        </div>
-                        <div class="carousel-item text-center">
-                            <h4 class="h3 text-center">Total U.S. Mill Residues</h4>
-                            <img class="BT23 estimate for bioenergy (based on BT23 mature-market medium scenario) is 2.8 million tons/yr equivalent. Currently used mill residues is 67.2 million tons/yr equivalent." src="assets/images/pie-forest-mill-residues.png" alt="ALT TEXT NEEDED" />
-                        </div>
-                        <div class="carousel-item text-center">
-                            <h4 class="h3 text-center">U.S. Timberland Growing Stock (Conterminous United States)</h4>
-                            <img class="" src="assets/images/pie-tree-biomass.png" alt="BT23 estimate for bioenergy for small-diameter trees (based on BT23 mature-market medium scenario) is 35 million tons/yr equivalent. Remaining timberland (not harvested) is ~14,500 million tons/yr equivalent. Harvest for conventional forest products is ~200 million tons/yr equivalent." />
-                        </div>
-                        <div class="carousel-item text-center">
-                            <h4 class="h3 text-center">Total U.S. Agricultural Residues</h4>
-                             <img class="" src="assets/images/pie-ag-residues.png" alt="BT23 estimate for bioenergy for (based on BT23 mature-market medium scenario) is 177 million tons/yr equivalent. Currently harvested for livestock is 3.2 million tons/yr equivalent. Currently grazed for livestock is 50 million tons/yr equivalent. Additional in fields (not harvested) is 365 million tons/yr equivalent." />
-                        </div>
-                        <div class="carousel-item text-center">
-                            <h4 class="h3 text-center">Total U.S. Agricultural Land (Conterminous United States</h4>
-                            <img class="" src="assets/images/pie-energy-crops.png" alt="BT23 estimate of energy crops on cropland (based on BT23 mature-market medium scenario) is 26 million acres. BT23 estimate of energy crops on pastureland (based on BT23 mature-market medium scenario) is 50 million acres. Pastureland is 315 million acres. Woodland cropland is 73 million acres. Cropland is 356 million acres." />
-                        </div>
-
-                        </div>
-                        <!-- navigation buttons -->
-                        <!--div class="lead text-center mt-3 slideshownav">
-                            <a class="carousel-control-prev" type="button" data-bs-target="#piecharts" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a> | <a class="carousel-control-next" type="button" data-bs-target="#piecharts" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
-                        </div>                    
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#piecharts" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        </div>
-                    </div>
-
-                    </div>
-
                     <!-- Overlapping Carousel -->
-                    <div class="carousel2" id="piecharts"></div>
-                    
-                    
+                    <div class="carousel2" id="piecharts"></div> 
                 </div>
                 <div class="col-lg-10">
                     <div class="well d-flex justify-content-center align-items-center my-4">
@@ -444,7 +357,6 @@ html {
                     </div>
                 </div>
             </div>
-            
             
             <!-- img left -->
             <div class="row my-3 justify-content-center align-items-center">
@@ -469,7 +381,7 @@ html {
             <!-- img left -->
             <div class="row my-3 justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <img src="assets/images/environmental-sustainability-getty1469430884.jpg" class="img-fluid mt-2 mb-3" alt="Landscape view of crop land parcels with different colored crops." />
+                    <img src="assets/images/environmental-sustainability-getty1197309995.jpg" class="img-fluid mt-2 mb-3" alt="Landscape view of crop land parcels with different colored crops." />
                 </div>
                 <div class="col-md-6">
                    <h4>Environmental Sustainability</h4>
@@ -481,7 +393,7 @@ html {
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-10">
                      <h3>Emerging Biomass Resources: Microalgae, Macroalgae, and Point-Source Waste Carbon Dioxide</h3>
-                    <img src="assets/images/emerging-nrel-22155-getty-1360462597-176965161.jpg" class="img-fluid mb-3" alt="A commercial algae pond; a kelp forest; and a stack at a powerplant emitting steam and carbon dioxide." data-aos="fade-in" />
+                    <img src="assets/images/nrel-22155-macroalgae-176965161.jpg" class="img-fluid mb-3" alt="A commercial algae pond; a kelp forest; and a stack at a powerplant emitting steam and carbon dioxide." data-aos="fade-in" />
                 </div>
                 <div class="col-lg-6">
                     <p>Beyond the terrestrial biomass estimates in BT23, the following resources could potentially expand that supply: </p>
@@ -494,7 +406,7 @@ html {
                 <div class="col-lg-4">
                     <figure class="highcharts-emerging" data-aos="fade-left" data-aos-offset="200">
                         <div id="emerging"></div>
-                        <p class="highcharts-description lh-sm">Additional biomass in the BT23 emerging scenario. Visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal</a> for complete data.</p>
+                        <p class="highcharts-description lh-sm">Additional biomass in the BT23 emerging scenario. Visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a> for complete data.</p>
                     </figure>
                 </div>
             </div>
@@ -509,8 +421,8 @@ html {
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-10">
                     <h3>What's Next for Biomass Resources: A Deeper Dive</h3>
-                    <img src="assets/images/es_mmh_emerging_map_v0.2.svg" alt="A county-level U.S. map showing biomass density. Complete data can be found on the BT23 data portal, which can be accessed at https://biokdf.ornl.gov/bt23-data-portal/" class="img-fluid">
-                    <p class="caption">Available biomass by county (in dry short tons per square mile) in BT23's emerging resource scenario (excludes macroalgae and carbon dioxide). Visit the <a href="https://biokdf.ornl.gov/bt23-data-portal/">BT23 data portal for complete data</a>.</p>
+                    <img src="assets/images/es_mmh_emerging_map_v0.2.svg" alt="A county-level U.S. map showing biomass density. Complete data can be found on the BT23 data portal, which can be accessed at https://bioenergykdf.ornl.gov/bt23-data-portal." class="img-fluid">
+                    <p class="caption">Available biomass by county (in dry short tons per square mile) in BT23's emerging resource scenario (excludes macroalgae and carbon dioxide). Visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a> for complete data.</p>
                     <p>The nation has a portfolio of biomass resources. Some are used today. Some are available now but underutilized. Some could be available in the future&mdash;with different levels of economic accessibility. Together, U.S. biomass resources represent an opportunity to provide renewable energy for hard-to-electrify sectors such as aviation, marine, and rail&mdash;key components of a decarbonized transportation sector.</p>
                 </div>
             </div>
@@ -610,7 +522,8 @@ html {
                         </div>
                         <div id="collapse2a" class="accordion-collapse collapse" aria-labelledby="heading2a" data-bs-parent="#accordion2">
                           <div class="accordion-body">
-                              <p>2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</p>
+                              <a href="#" class="noicon"><img src="https://placehold.jp/150x200.png" alt="2023 Billion-Ton Report Cover" class="img-fluid mb-1 mb-3" /></a>
+                            <p><a href="#">2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</a></p>
                               <p>Executive Summary</p>
                             </div>
                           </div>
@@ -642,10 +555,12 @@ html {
                         </div>
                         <div id="collapse2c" class="accordion-collapse collapse" aria-labelledby="heading2c" data-bs-parent="#accordion2">
                           <div class="accordion-body">
-                              <p>Appendix A. Appendix to Chapter 2: Biomass Currently Used for Energy and Coproducts</p>
+                                <p>Appendix A. Appendix to Chapter 2: Biomass Currently Used for Energy and Coproducts</p>
                                 <p>Appendix B. Appendix to Chapter 4: Biomass from the Forested Land Base</p>
                                 <p>Appendix C. Appendix to Chapter 5: Biomass from Agriculture</p>
-                                <p>Appendix D. Appendix to Chapter 7: Emerging Resources</p>
+                                <p>Appendix D. Appendix to Chapter 7.1: Microalgae</p>
+                                <p>Appendix E. Appendix to Chapter 7.2: Macroalgae</p>
+                                <p>Appendix F. Appendix to Chapter 7.3: CO2 Emissions from Stationary Sources</p>
                             </div>
                       </div>
                     </div>
@@ -699,12 +614,10 @@ html {
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-<script src="client/js/highchart-today.js"></script>
-<script src="client/js/highchart-nearterm.js"></script>
-<script src="client/js/highchart-maturemarket.js"></script>
-<script src="client/js/highchart-emerging.js"></script>
-<script src="client/js/overlapping-carousel.js"></script>
-
+<script src="client/js/bto-highcharts-min.js"></script>
+<!--overlapping carousel-->
+<script src="client/js/overlapping-carousel-min.js"></script>
+<!-- animate o scroll -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -734,16 +647,6 @@ html {
       .scroll(boxtothetop);
     boxtothetop();
   });
-  var vid = document.getElementsByClassName("vid");
-    vid.addEventListener("timeupdate", function () {
-        if(this.currentTime >= 5.0) {
-            this.currentTime = 0.0;
-        }
-    });
   </script>
-
-
-
-
 </body>
 </html>
