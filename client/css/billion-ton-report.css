@@ -1,9 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
- h1 {font-size:28px;}
-@media (min-width: 768px) { 
+html {scroll-padding-top: 4rem;}
+h1 {font-size:28px;}
+@media (min-width: 768px) {
     h1 {font-size:36px;}
 }
+#boxThis {width:100%; text-align: center;}  
+#boxThis.box {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+  }
 .navbar {min-height:70px;}
 .cover-image-holder{max-height:300px;height:300px;overflow:hidden;}
 .cover-text{background-color:rgba(0,0,0,0.67);top:50%;left:50%;transform:translate(-50%,-50%);position:absolute;width:55%;}
@@ -26,14 +34,6 @@
 .anim{opacity:0;transition:all 0.5s ease-in-out;will-change:transform;}
 .anim-b,.anim-l,.anim-r{transform:translateY(50px);}
 .anim-done{opacity:1 !important;transform:translate(0,0) !important;}
-#boxThis {width:100%; text-align: center;}  
-#boxThis.box {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-  }
-html {scroll-padding-top: 4rem;}
 .carousel-indicators {bottom:-25px;}
 .carousel-indicators .active {
     width: auto;
@@ -100,6 +100,8 @@ html {scroll-padding-top: 4rem;}
 	opacity: 1;
 	transition: opacity .15s ease;
 	display: inline;
+    width:auto;
+    font-size:16px;
 }
 .carousel .carousel-control-next:hover, .carousel .carousel-control-prev:hover {text-decoration:underline;}
 .carousel .fas {
@@ -109,3 +111,6 @@ html {scroll-padding-top: 4rem;}
 .carousel .carousel-control-next .fas {margin: 0 0.5em; color: #0071b8;}
 .carousel .carousel-control-prev .fas {margin: 0 0.5em 0 0; color: #0071b8;}
 .slideshownav {margin-top: 0;}
+@media (min-width: 576px) {
+    .carousel .carousel-control-next, .carousel .carousel-control-prev {font-size:20px;}
+}

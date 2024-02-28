@@ -16,6 +16,9 @@
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
 <link href="client/css/app.min.css" rel="stylesheet">
 <link href="client/css/billion-ton-report-min.css" rel="stylesheet">
+    <style>
+
+    </style>
 <!-- Animate on Scroll https://michalsnik.github.io/aos/ -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- overlapping carousel -->
@@ -138,7 +141,6 @@
                                 <p id="videosummary2" class="caption text-center mx-auto"><span class="sr-only">A brief animation showing interactivity of treemap visualizations on the BT23 data portal, which can be accessed at https://bioenergykdf.ornl.gov/bt23-data-portal.</span> In its mature-market medium scenario, BT23 estimates that 1.2 billion dry tons of biomass could be available every year in the United States.</p>
                         </div>
                         <div class="carousel-item text-center">
-                            <!--img class="" src="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios.gif" alt="ALT TEXT NEEDED" / -->
                                 <div class="ratio ratio-16x9">
                                     <video autoplay="autoplay" loop="loop" preload="auto" class="embed-responsive-item vid" poster="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios.jpg" aria-label="Animation of step-wise supply charts" aria-describedby="videosummary3">
                                         <source src="https://video.stratus.nrel.gov/bt23-stepwise-supply-all-scenarios-v2.mp4" type="video/mp4"  />
@@ -160,9 +162,9 @@
 
             <div class="row justify-content-center">
             <div class="col-auto">
-                    <div class="bg-white p-2 mb-5 text-center" style="line-height:1.2; min-height:80px;">
+                    <div class="bg-white p-2 mb-5 text-center d-flex align-items-center" style="line-height:1.2; min-height:80px;">
                         <img src="assets/images/kdf-icon.jpg" alt="KDF icon" class="float-start me-3">
-                        To explore interactive maps, graphics, and data, visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a>.
+                        <p>To explore interactive maps, graphics, and data, visit the <a href="https://bioenergykdf.ornl.gov/bt23-data-portal">BT23 data portal</a>.</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +187,7 @@
                         <li>Landfill gas and other wastes: ~40 million tons per year</li>
                     </ul>
                     
-                    <p class="my-5"><span class="callout-green">Total used today: <strong>~340 million tons</strong> per year</span></p>
+                    <div class="my-5 callout-green">Total used today: <strong>~340 million tons</strong> per year</div>
 
                     <div class="well d-flex justify-content-center align-items-center my-4">
                         <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
@@ -344,7 +346,7 @@
                 <div class="col-lg-10">
                     <div class="well d-flex justify-content-center align-items-center my-4">
                         <img src="assets/images/icon-chapter.svg" alt="" class="float-start me-3 moreinfo">
-                        <p class="mb-0 lh-sm">Read <strong>[NEED LINK]</strong> Chapter 5. Biomass from Agriculture for more details.</p>
+                        <div class="mb-0 lh-sm">Read <strong>[NEED LINK]</strong> Chapter 5. Biomass from Agriculture for more details.</div>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -362,30 +364,30 @@
             <!-- img left -->
             <div class="row my-3 justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <img src="assets/images/food-security-getty1165611102.jpg" class="img-fluid mt-2 mb-3" alt="A person holds a small child, who reaches for peppers at a grocery store." />
+                    <img src="assets/images/food-security-getty1165611102.jpg" class="img-fluid mt-2 mb-1 mb-md-3" alt="A person holds a small child, who reaches for peppers at a grocery store." />
                 </div>
                 <div class="col-md-6">
-                    <h4>Food Demands</h4>
+                    <h4 class="mt-0">Food Demands</h4>
                     <p>Potential impacts to food production and land-use change have been raised as a concerns of biomass production. To ensure future demands are met for food, feed, and fiber, BT23 constrains its biomass estimates in conjunction with these critical products.</p>
                 </div>
             </div>
              <!-- img right -->
             <div class="row my-3 justify-content-center align-items-center">
                 <div class="col-md-4 order-lg-2">
-                    <img src="assets/images/land-use-change-getty1815059085.jpg" class="img-fluid mt-2 mb-3" alt="Aerial view of landscape with forests, fields, buildings, and a river." />
+                    <img src="assets/images/land-use-change-getty1815059085.jpg" class="img-fluid mt-2 mb-1 mb-md-3" alt="Aerial view of landscape with forests, fields, buildings, and a river." />
                 </div>
                 <div class="col-md-6">
-                    <h4>Land Use Change</h4>
+                    <h4 class="mt-0">Land Use Change</h4>
                     <p>BT23's mature-market simulations include establishing energy crops on less than 10% of U.S. agricultural lands and increasing timber production by about 15%, with no decrease in forestlands. This production is modeled to have a less than 1% increase in food prices and a more than 25% increase in farm revenue.</p>
                 </div>
             </div>
             <!-- img left -->
             <div class="row my-3 justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <img src="assets/images/environmental-sustainability-getty1197309995.jpg" class="img-fluid mt-2 mb-3" alt="Landscape view of crop land parcels with different colored crops." />
+                    <img src="assets/images/environmental-sustainability-getty1197309995.jpg" class="img-fluid mt-2 mb-1 mb-md-3" alt="Landscape view of crop land parcels with different colored crops." />
                 </div>
                 <div class="col-md-6">
-                   <h4>Environmental Sustainability</h4>
+                   <h4 class="mt-0">Environmental Sustainability</h4>
                     <p>BT23's biomass estimates are constrained to promote net carbon sequestration, water regulation, and other ecosystem services. If land management practices deviate from the sustainability constraints assumed in this report, more biomass could be produced but with possible unintended consequences. For example, more agricultural residues could be available at risk of increasing soil erosion.</p>
                 </div>
             </div>
@@ -498,7 +500,7 @@
                             </div>
                             <!-- navigation buttons -->
                             <div class="lead text-right pt-3 mb-0 slideshownav">
-                                <a class="carousel-control-prev" type="button" data-bs-target="#casestudies" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a> | <a class="carousel-control-next" type="button" data-bs-target="#casestudies" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
+                                <a class="carousel-control-prev" type="button" data-bs-target="#casestudies" data-bs-slide="prev"><i class="fas fa-chevron-left"></i>Previous</a>&nbsp&nbsp;&nbsp;<a class="carousel-control-next" type="button" data-bs-target="#casestudies" data-bs-slide="next">Next<span class="fas fa-chevron-right"></span></a>
                             </div>                    
                         </div>
                         </div>

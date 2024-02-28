@@ -10,18 +10,6 @@
     --carousel-width:450px;
     width:100%;
 }
-@media(min-width:767px){
-    #piecharts.carousel2 {
-      --carousel-height: 345px;
-      --carousel-width: 1000px;
-      --carousel-item-height: 200px;
-      --carousel-item-width: 300px;
-
-      margin:50px 0;
-      width: 100%;
-    }
-    #piecharts .carousel-control {font-size:20px;}
-}
 #piecharts .carousel-container {
   align-items: center;
   display: flex;
@@ -102,6 +90,7 @@
   transition: all 0.25s ease-out;
   text-shadow: none;
   font-size:16px;
+  width:25%;
 }
 
 #piecharts .carousel-control:hover {
@@ -148,4 +137,16 @@
   border-top: 4px solid transparent;
   left: 5px;
   width: 0;
+}
+@media(min-width:767px){
+    #piecharts.carousel2 {
+      --carousel-height: 345px;
+      --carousel-width: 1000px;
+      --carousel-item-height: 200px;
+      --carousel-item-width: 300px;
+
+      margin:50px 0;
+      width: 100%;
+    }
+    #piecharts .carousel-control {font-size:20px; width:15%;}
 }
