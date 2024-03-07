@@ -16,13 +16,20 @@
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
 <link href="client/css/app.min.css" rel="stylesheet">
 <link href="client/css/billion-ton-report-min.css" rel="stylesheet">
-    <style>
-
-    </style>
 <!-- Animate on Scroll https://michalsnik.github.io/aos/ -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- overlapping carousel -->
 <link rel="stylesheet" href="client/css/overlapping-carousel-min.css" />
+<!-- Hero video pause/play buttons -->
+<style>
+    .vidcontrol {
+      position: absolute;
+      top: 3%;
+      right: 3%;
+      background-color:rgba(0, 0, 0, 0.67); 
+      padding: 0.25em 0.5em;
+    }
+</style>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
 <title>2023 Billion-Ton Report: An Assessment of U.S. Renewable Carbon Resources</title>
 </head>
@@ -34,10 +41,15 @@
 <!-- video -->
 <div class="position-relative">
   <div class="cover-image-holder">
-     <video autoplay="autoplay" loop="loop" muted="muted" poster="https://video.stratus.nrel.gov/billion-ton-report-video-4-poster.jpg">
+     <video id="covervid" autoplay="autoplay" loop="loop" muted="muted" poster="https://video.stratus.nrel.gov/billion-ton-report-video-4-poster.jpg">
       <source src="https://video.stratus.nrel.gov/billion-ton-report-video-4.mp4" type="video/mp4" />
       Your browser does not support the video tag. 
     </video>
+    <!-- Hero video pause/play buttons -->
+    <div class="text-center vidcontrol" style="background-color:rgba(0, 0, 0, 0.67); padding: 0.25em 0.5em;">
+        <button onclick="playVid()" type="button" class="btn btn-link text-white mr-2 p-0"><i class="fas fa-play"></i></button>
+        <button onclick="pauseVid()" type="button" class="btn btn-link text-white m-0 p-0"><i class="fas fa-pause"></i></button>
+    </div>
   </div>
   <div class="cover-text py-4">
     <div class="container">
@@ -650,6 +662,14 @@
       .scroll(boxtothetop);
     boxtothetop();
   });
+// Hero video pause/play buttons 
+  var vid = document.getElementById("covervid");
+    function playVid() {
+        vid.play();
+    }
+    function pauseVid() {
+        vid.pause();
+    }
   </script>
 </body>
 </html>
