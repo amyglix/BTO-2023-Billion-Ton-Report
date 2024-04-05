@@ -13,6 +13,9 @@ h1 {font-size:28px;}
     z-index: 9999;
   }
 .navbar {min-height:70px;}
+.navbar-expand-md .navbar-nav .nav-link {
+    font-weight: bold;
+}
 .cover-image-holder{max-height:300px;height:300px;overflow:hidden;}
 .cover-text{background-color:rgba(0,0,0,0.67);top:50%;left:50%;transform:translate(-50%,-50%);position:absolute;width:55%;}
 .bg-light {background-color: #F0F0F0 !important;}
