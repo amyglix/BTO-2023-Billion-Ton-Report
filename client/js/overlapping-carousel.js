@@ -27,7 +27,7 @@ class Carousel {
       },
       {
         'id': '6',
-        'src': 'https://video.stratus.nrel.gov/pie-tree-biomass.png',
+        'src': 'https://www1.eere.energy.gov/apps/bioenergy/bto-2023-billion-ton-report/assets/images/pie-tree-biomass_v2.png',
       }
     ];
     this.carouselInView = [1, 2, 3, 4, 5, 6];
